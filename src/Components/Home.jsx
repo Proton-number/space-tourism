@@ -3,15 +3,14 @@ import React from "react";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 
-
 function Home() {
   return (
     <Box
       sx={{
         backgroundImage: {
-          xs: 'url("/public/src/assets/home/background-home-mobile.jpg")',
-          sm: 'url("/public/src/assets/home/background-home-tablet.jpg")',
-          lg: 'url("/public/src/assets/home/background-home-desktop.jpg")',
+          xs: 'url("/public/assets/home/background-home-mobile.jpg")',
+          sm: 'url("/public/assets/home/background-home-tablet.jpg")',
+          lg: 'url("/public/assets/home/background-home-desktop.jpg")',
         },
         backgroundSize: "cover",
         minHeight: "100vh",
@@ -20,7 +19,7 @@ function Home() {
       <Nav />
       <NavMobile />
       <Stack
-        spacing={{ xs:6, sm: 8 }}
+        spacing={{ xs: 6, sm: 8 }}
         direction={{
           xs: "column",
           lg: "row",
@@ -38,7 +37,7 @@ function Home() {
             xs: "60px",
             sm: "68px",
             lg: "80px",
-            },
+          },
         }}
       >
         <Stack spacing={4} sx={{ width: { lg: "40%" } }}>

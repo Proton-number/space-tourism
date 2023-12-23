@@ -26,9 +26,9 @@ function Destination() {
       <Box
         sx={{
           backgroundImage: {
-            xs: 'url("/assets/destination/background-destination-mobile.jpg")',
-            sm: 'url("/assets/destination/background-destination-tablet.jpg")',
-            lg: 'url("/assets/destination/background-destination-desktop.jpg")',
+            xs: 'url("assets/destination/background-destination-mobile.jpg")',
+            sm: 'url("assets/destination/background-destination-tablet.jpg")',
+            lg: 'url("assets/destination/background-destination-desktop.jpg")',
           },
           backgroundSize: "cover",
           minHeight: "100vh",

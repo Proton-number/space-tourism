@@ -29,9 +29,9 @@ function Crew() {
     <Box
       sx={{
         backgroundImage: {
-          xs: 'url("/assets/crew/background-crew-mobile.jpg")',
-          sm: 'url("/assets/crew/background-crew-tablet.jpg")',
-          lg: 'url("/assets/crew/background-crew-desktop.jpg")',
+          xs: 'url("assets/crew/background-crew-mobile.jpg")',
+          sm: 'url("assets/crew/background-crew-tablet.jpg")',
+          lg: 'url("assets/crew/background-crew-desktop.jpg")',
         },
         backgroundSize: "cover",
         height: "100vh",

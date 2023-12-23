@@ -8,9 +8,9 @@ function Home() {
     <Box
       sx={{
         backgroundImage: {
-          xs: 'url("/public/assets/home/background-home-mobile.jpg")',
-          sm: 'url("/public/assets/home/background-home-tablet.jpg")',
-          lg: 'url("/public/assets/home/background-home-desktop.jpg")',
+          xs: 'url("assets/home/background-home-mobile.jpg")',
+          sm: 'url("assets/home/background-home-tablet.jpg")',
+          lg: 'url("assets/home/background-home-desktop.jpg")',
         },
         backgroundSize: "cover",
         minHeight: "100vh",

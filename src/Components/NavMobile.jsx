@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import logo from "/assets/logo-43040818.svg";
+import logo from "assets/logo-43040818.svg";
 import { Link } from "react-router-dom";
 
 function NavMobile() {

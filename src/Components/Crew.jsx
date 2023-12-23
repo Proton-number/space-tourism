@@ -6,6 +6,8 @@ import Douglas from "/assets/crew/image-douglas-hurley.webp";
 import Mark from "/assets/crew/image-mark-shuttleworth.webp";
 import Victor from "/assets/crew/image-victor-glover.webp";
 import Anousheh from "/assets/crew/image-anousheh-ansari.webp";
+import { motion } from "framer-motion";
+
 
 const images = [`${Douglas}`, `${Mark}`, `${Victor}`, `${Anousheh}`];
 const roles = ["COMMANDER", "MISSION SPECIALIST", "PILOT", "FLIGHT ENGINEER"];
@@ -39,33 +41,63 @@ function Crew() {
     >
       <Nav />
       <NavMobile />
-          <Stack
-              spacing={{xs:6, sm:8}}
+      <Stack
+        spacing={{ xs: 6, sm: 8 }}
         direction={{ lg: "row" }}
         sx={{
-            alignItems: "center",
-            padding: {
-                xs:'54px',
-              sm:'74px',
+          alignItems: "center",
+          padding: {
+            xs: "54px",
+            sm: "74px",
             lg: "80px",
-            },
-            textAlign:{xs:'center', sm:'center', lg:'left'}
+          },
+          textAlign: { xs: "center", sm: "center", lg: "left" },
         }}
       >
-        <Stack spacing={2.4}>
-          <Typography variant="h3" sx={{fontSize:{xs:'40px', sm:'58px', lg:'60px'}}}>
+        <Stack
+          component={motion.div}
+          initial={{ opacity: 0, x: -1000 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: .8 }}
+          spacing={2.4}
+        >
+          <Typography
+            variant="h3"
+            sx={{ fontSize: { xs: "40px", sm: "58px", lg: "60px" } }}
+          >
             <span style={{ opacity: "50%" }}>02</span> MEET YOUR CREW
           </Typography>
-          <Typography variant="h3" sx={{fontSize:{xs:'30px',sm:'40px', lg:'50px'}}}> {roles[currentIndex]} </Typography>
-          <Typography variant="h4" sx={{fontSize:{xs:'20px', sm:'30px', lg:'36px'}}}>{names[currentIndex]}</Typography>
-          <Typography variant='p' sx={{ width: { lg: "60%" },fontSize:{xs:'16.4px', sm:'15.1px', lg:'18px'}  }}>
+          <Typography
+            variant="h3"
+            sx={{ fontSize: { xs: "30px", sm: "40px", lg: "50px" } }}
+          >
+            {" "}
+            {roles[currentIndex]}{" "}
+          </Typography>
+          <Typography
+            variant="h4"
+            sx={{ fontSize: { xs: "20px", sm: "30px", lg: "36px" } }}
+          >
+            {names[currentIndex]}
+          </Typography>
+          <Typography
+            variant="p"
+            sx={{
+              width: { lg: "60%" },
+              fontSize: { xs: "16.4px", sm: "15.1px", lg: "18px" },
+            }}
+          >
             {about[currentIndex]}
           </Typography>
-                  <Stack spacing={2.2} direction="row" sx={{ justifyContent: {xs: 'center', lg:'left'} }}>
+          <Stack
+            spacing={2.2}
+            direction="row"
+            sx={{ justifyContent: { xs: "center", lg: "left" } }}
+          >
             <Box
               sx={{
-                height: {xs:'20px', sm: "30px" },
-                width: {xs:'20px', sm: "30px" },
+                height: { xs: "20px", sm: "30px" },
+                width: { xs: "20px", sm: "30px" },
                 borderRadius: "50%",
                 backgroundColor:
                   currentIndex === 0 ? "white" : "rgba(0, 0, 0, 0.95)",
@@ -77,8 +109,8 @@ function Crew() {
             />
             <Box
               sx={{
-                height: {xs:'20px', sm: "30px" },
-                width: {xs:'20px', sm: "30px" },
+                height: { xs: "20px", sm: "30px" },
+                width: { xs: "20px", sm: "30px" },
                 borderRadius: "50%",
                 backgroundColor:
                   currentIndex === 1 ? "white" : "rgba(0, 0, 0, 0.95)",
@@ -90,8 +122,8 @@ function Crew() {
             />
             <Box
               sx={{
-                height: {xs:'20px', sm: "30px" },
-                width: {xs:'20px', sm: "30px" },
+                height: { xs: "20px", sm: "30px" },
+                width: { xs: "20px", sm: "30px" },
                 borderRadius: "50%",
                 backgroundColor:
                   currentIndex === 2 ? "white" : "rgba(0, 0, 0, 0.95)",
@@ -103,8 +135,8 @@ function Crew() {
             />
             <Box
               sx={{
-                height: {xs:'20px', sm: "30px" },
-                width: {xs:'20px', sm: "30px" },
+                height: { xs: "20px", sm: "30px" },
+                width: { xs: "20px", sm: "30px" },
                 borderRadius: "50%",
                 backgroundColor:
                   currentIndex === 3 ? "white" : "rgba(0, 0, 0, 0.95)",
@@ -118,9 +150,15 @@ function Crew() {
         </Stack>
         <Box>
           <Box
-            component="img"
+            component={motion.img}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: .8 }}
             src={images[currentIndex]}
-            sx={{ width: {xs:"180px",sm:'240px', lg: "440px" }, height: {sm:'240px', lg: "550px" } }}
+            sx={{
+              width: { xs: "180px", sm: "240px", lg: "440px" },
+              height: { sm: "240px", lg: "550px" },
+            }}
           />
         </Box>
       </Stack>

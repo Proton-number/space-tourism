@@ -5,10 +5,9 @@ import NavMobile from "./NavMobile";
 import launchVehicle from "/assets/technology/image-launch-vehicle-landscape.jpg";
 import spacePort from "/assets/technology/image-spaceport-landscape.jpg";
 import spaceCapsule from "/assets/technology/image-space-capsule-landscape.jpg";
-
+import { motion } from "framer-motion";
 
 const images = [`${launchVehicle}`, `${spacePort}`, `${spaceCapsule}`];
-
 
 const terminology = ["LAUNCH VEHICLE", "SPACEPORT", "SPACE CAPSULE"];
 const about = [
@@ -34,19 +33,45 @@ function Technology() {
       <Nav />
       <NavMobile />
       <Stack
+        
         sx={{
           padding: {
+            xs: "55px",
+            sm: "65px",
             lg: "80px",
           },
         }}
+        spacing={{ xs: 4, lg: 0 }}
       >
-        <Typography variant='h3'> 
+        <Typography
+          component={motion.p}
+          initial={{ opacity: 0, x: -1000 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: .8 }}
+          variant="h3"
+          sx={{
+            textAlign: { xs: "center", lg: "left" },
+            fontSize: { xs: "25px", lg:'50px' },
+          }}
+        >
           {" "}
           <span style={{ opacity: "50%" }}>03</span> SPACE LAUNCH 101
         </Typography>
 
-        <Stack spacing={3} direction="row" sx={{alignItems:'center'}}>
-          <Stack spacing={3} direction="row" sx={{alignItems:'center'}}>
+        <Stack
+          spacing={{ xs: 3, sm: 8, lg: 8 }}
+          direction={{ xs: "column", lg: "row" }}
+          sx={{ alignItems: "center" }}
+        >
+          <Stack
+            component={motion.div}
+            initial={{ opacity: 0, x: -1000 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: .8 }}
+            spacing={{ xs: 3, sm: 4.4, lg: 8 }}
+            direction="row"
+            sx={{ alignItems: "center" }}
+          >
             <Stack spacing={3}>
               <Box
                 onClick={() => setCurrentIndex(0)}
@@ -134,13 +159,24 @@ function Technology() {
               </Box>
             </Stack>
             <Stack spacing={2}>
-              <Typography variant='h4'>THE TERMINOLOGY</Typography>
-              <Typography variant='h5'>{terminology[currentIndex]}</Typography>
-              <Typography>{about[currentIndex]}</Typography>
+              <Typography variant="h4" sx={{ fontSize: { xs: "22px", lg:'35px' } }}>
+                THE TERMINOLOGY
+              </Typography>
+              <Typography variant="h5" sx={{ fontSize: { xs: "20px", lg:'31px' } }}>
+                {terminology[currentIndex]}
+              </Typography>
+              <Typography variant="p">{about[currentIndex]}</Typography>
             </Stack>
           </Stack>
           <Box>
-            <Box component="img" src={images[currentIndex]} />
+            <Box
+              component={motion.img}
+              initial={{ opacity: 0, y:40 }}
+              animate={{ opacity: 1, y:0 }}
+              transition={{ duration: .9 }}
+              src={images[currentIndex]}
+              sx={{ width: { xs: "367px", sm: "590px" } }}
+            />
           </Box>
         </Stack>
       </Stack>

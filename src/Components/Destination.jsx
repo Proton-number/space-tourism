@@ -6,6 +6,7 @@ import moon from "/assets/destination/image-moon.png";
 import mars from "/assets/destination/image-mars.png";
 import titan from "/assets/destination/image-titan.png";
 import europa from "/assets/destination/image-europa.png";
+import { motion } from "framer-motion";
 
 const images = [`${moon}`, `${mars}`, `${europa}`, `${titan}`];
 const place = ["MOON", "MARS", "EUROPA", "TITAN"];
@@ -60,20 +61,31 @@ function Destination() {
         >
           <Stack spacing={4} sx={{ alignItems: "center" }}>
             <Typography
+              component={motion.h5}
+              initial={{ y: -10 }}
+              animate={{ y: 0 }}
+              transition={{ type: "spring", duration:1.5}}
               variant="h5"
-              sx={{ fontSize: { xs: "21px", lg: "34px" } }}
+              sx={{ fontSize: { xs: "21px", sm:'34px', lg: "34px" } }}
             >
               {" "}
               <span style={{ opacity: "50%" }}>01</span> PICK YOUR DESTINATION{" "}
             </Typography>
             <Box
-              component="img"
+             component={motion.img}
+             initial={{ opacity: 0 }}
+             animate={{ opacity: 1 }}
+             transition={{ duration: 1}}
               src={images[currentIndex]}
-              sx={{ width: { xs: "300px", sm: "", lg: "480px" } }}
+              sx={{ width: { xs: "300px", sm: "340px", lg: "480px" } }}
             />
           </Stack>
 
           <Stack
+            component={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1}}
             sx={{
               alignItems: { xs: "center", lg: "flex-start" },
               textAlign: { xs: "center", sm: "center", lg: "left" },

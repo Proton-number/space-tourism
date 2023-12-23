@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Nav from "./Nav";
 import { Box, Stack, Typography } from "@mui/material";
 import NavMobile from "./NavMobile";
-import moon from "/public/assets/destination/image-moon.png";
-import mars from "/public/assets/destination/image-mars.png";
-import titan from "/public/assets/destination/image-titan.png";
-import europa from "/public/assets/destination/image-europa.png";
+import moon from "/assets/destination/image-moon.png";
+import mars from "/assets/destination/image-mars.png";
+import titan from "/assets/destination/image-titan.png";
+import europa from "/assets/destination/image-europa.png";
 
 const images = [`${moon}`, `${mars}`, `${europa}`, `${titan}`];
 const place = ["MOON", "MARS", "EUROPA", "TITAN"];
@@ -26,9 +26,9 @@ function Destination() {
       <Box
         sx={{
           backgroundImage: {
-            xs: 'url("/public/assets/destination/background-destination-mobile.jpg")',
-            sm: 'url("/public/assets/destination/background-destination-tablet.jpg")',
-            lg: 'url("/public/assets/destination/background-destination-desktop.jpg")',
+            xs: 'url("/assets/destination/background-destination-mobile.jpg")',
+            sm: 'url("/assets/destination/background-destination-tablet.jpg")',
+            lg: 'url("/assets/destination/background-destination-desktop.jpg")',
           },
           backgroundSize: "cover",
           minHeight: "100vh",

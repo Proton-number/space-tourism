@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Nav from "./Nav";
 import { Box, Stack, Typography } from "@mui/material";
 import NavMobile from "./NavMobile";
-import launchVehicle from "/public/assets/technology/image-launch-vehicle-landscape.jpg";
-import spacePort from "/public/assets/technology/image-spaceport-landscape.jpg";
-import spaceCapsule from "/public/assets/technology/image-space-capsule-landscape.jpg";
-import launchVehiclePortrait from "/public/assets/technology/image-launch-vehicle-portrait.jpg";
-import spacePortPortrait from "/public/assets/technology/image-spaceport-portrait.jpg";
-import spaceCapsulePortrait from "/public/assets/technology/image-space-capsule-portrait.jpg";
+import launchVehicle from "/assets/technology/image-launch-vehicle-landscape.jpg";
+import spacePort from "/assets/technology/image-spaceport-landscape.jpg";
+import spaceCapsule from "/assets/technology/image-space-capsule-landscape.jpg";
+import launchVehiclePortrait from "/assets/technology/image-launch-vehicle-portrait.jpg";
+import spacePortPortrait from "/assets/technology/image-spaceport-portrait.jpg";
+import spaceCapsulePortrait from "/assets/technology/image-space-capsule-portrait.jpg";
 
 const images = [`${launchVehicle}`, `${spacePort}`, `${spaceCapsule}`];
 const potraitImages = [
@@ -29,9 +29,9 @@ function Technology() {
     <Box
       sx={{
         backgroundImage: {
-          xs: 'url("/public/assets/technology/background-technology-mobile.jpg")',
-          sm: 'url("/public/assets/technology/background-technology-tablet.jpg")',
-          lg: 'url("/public/assets/technology/background-technology-desktop.jpg")',
+          xs: 'url("/assets/technology/background-technology-mobile.jpg")',
+          sm: 'url("/assets/technology/background-technology-tablet.jpg")',
+          lg: 'url("/assets/technology/background-technology-desktop.jpg")',
         },
         backgroundSize: "cover",
         height: "100vh",

@@ -15,7 +15,6 @@ import { Link } from "react-router-dom";
 
 function NavMobile() {
   const [isDrawerOpen, setisDrawerOpen] = useState(false);
-  const [expanded, setExpanded] = useState(false);
   return (
     <>
       <AppBar

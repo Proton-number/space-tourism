@@ -2,19 +2,13 @@ import React, { useState } from "react";
 import Nav from "./Nav";
 import { Box, Stack, Typography } from "@mui/material";
 import NavMobile from "./NavMobile";
-import launchVehicle from "assets/technology/image-launch-vehicle-landscape.jpg";
-import spacePort from "assets/technology/image-spaceport-landscape.jpg";
-import spaceCapsule from "assets/technology/image-space-capsule-landscape.jpg";
-import launchVehiclePortrait from "assets/technology/image-launch-vehicle-portrait.jpg";
-import spacePortPortrait from "assets/technology/image-spaceport-portrait.jpg";
-import spaceCapsulePortrait from "assets/technology/image-space-capsule-portrait.jpg";
+import launchVehicle from "/assets/technology/image-launch-vehicle-landscape.jpg";
+import spacePort from "/assets/technology/image-spaceport-landscape.jpg";
+import spaceCapsule from "/assets/technology/image-space-capsule-landscape.jpg";
+
 
 const images = [`${launchVehicle}`, `${spacePort}`, `${spaceCapsule}`];
-const potraitImages = [
-  `${launchVehiclePortrait}`,
-  `${spacePortPortrait}`,
-  `${spaceCapsulePortrait}`,
-];
+
 
 const terminology = ["LAUNCH VEHICLE", "SPACEPORT", "SPACE CAPSULE"];
 const about = [

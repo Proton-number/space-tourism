@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, AppBar, Toolbar, Typography, Stack } from "@mui/material";
+import { Box, Toolbar, Typography, Stack } from "@mui/material";
 import { motion } from "framer-motion";
-import logo from "assets/logo-43040818.svg";
+import logo from "/assets/logo-43040818.svg";
 import { Link } from "react-router-dom";
 
 function Nav() {

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Nav from "./Nav";
 import { Box, Stack, Typography } from "@mui/material";
 import NavMobile from "./NavMobile";
-import Douglas from "assets/crew/image-douglas-hurley.webp";
-import Mark from "assets/crew/image-mark-shuttleworth.webp";
-import Victor from "assets/crew/image-victor-glover.webp";
-import Anousheh from "assets/crew/image-anousheh-ansari.webp";
+import Douglas from "/assets/crew/image-douglas-hurley.webp";
+import Mark from "/assets/crew/image-mark-shuttleworth.webp";
+import Victor from "/assets/crew/image-victor-glover.webp";
+import Anousheh from "/assets/crew/image-anousheh-ansari.webp";
 
 const images = [`${Douglas}`, `${Mark}`, `${Victor}`, `${Anousheh}`];
 const roles = ["COMMANDER", "MISSION SPECIALIST", "PILOT", "FLIGHT ENGINEER"];
@@ -29,9 +29,9 @@ function Crew() {
     <Box
       sx={{
         backgroundImage: {
-          xs: 'url("assets/crew/background-crew-mobile.jpg")',
-          sm: 'url("assets/crew/background-crew-tablet.jpg")',
-          lg: 'url("assets/crew/background-crew-desktop.jpg")',
+          xs: 'url("/assets/crew/background-crew-mobile.jpg")',
+          sm: 'url("/assets/crew/background-crew-tablet.jpg")',
+          lg: 'url("/assets/crew/background-crew-desktop.jpg")',
         },
         backgroundSize: "cover",
         height: "100vh",

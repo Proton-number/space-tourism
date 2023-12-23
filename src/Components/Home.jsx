@@ -3,14 +3,15 @@ import React from "react";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 
+
 function Home() {
   return (
     <Box
       sx={{
         backgroundImage: {
-          xs: 'url("/src/assets/home/background-home-mobile.jpg")',
-          sm: 'url("/src/assets/home/background-home-tablet.jpg")',
-          lg: 'url("/src/assets/home/background-home-desktop.jpg")',
+          xs: 'url("/public/src/assets/home/background-home-mobile.jpg")',
+          sm: 'url("/public/src/assets/home/background-home-tablet.jpg")',
+          lg: 'url("/public/src/assets/home/background-home-desktop.jpg")',
         },
         backgroundSize: "cover",
         minHeight: "100vh",

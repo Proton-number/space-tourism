@@ -40,6 +40,7 @@ function Nav() {
                 component={motion.p}
                 whileHover={{ y: -4 }}
                 sx={{ cursor: "pointer" }}
+                variant="p"
               >
                 {" "}
                 <b>00</b> Home{" "}
@@ -54,6 +55,7 @@ function Nav() {
                 component={motion.p}
                 whileHover={{ y: -4 }}
                 sx={{ cursor: "pointer" }}
+                variant="p"
               >
                 {" "}
                 <b>01</b> Destination{" "}
@@ -67,6 +69,7 @@ function Nav() {
                 component={motion.p}
                 whileHover={{ y: -4 }}
                 sx={{ cursor: "pointer" }}
+                variant="p"
               >
                 {" "}
                 <b>02</b> Crew{" "}
@@ -80,6 +83,7 @@ function Nav() {
                 component={motion.p}
                 whileHover={{ y: -4 }}
                 sx={{ cursor: "pointer" }}
+                variant="p"
               >
                 {" "}
                 <b>03</b> Technology{" "}

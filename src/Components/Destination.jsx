@@ -70,7 +70,10 @@ function Destination() {
             <Box
               component="img"
               src={images[currentIndex]}
-              sx={{ width: { xs: "300px", sm: "340px", lg: "480px" } }}
+              sx={{
+                width: { xs: "300px", sm: "340px", lg: "480px" },
+                height: { xs: "300px", sm: "340px", lg: "480px" },
+              }}
             />
           </Stack>
 

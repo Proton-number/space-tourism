@@ -62,9 +62,9 @@ function Destination() {
           <Stack spacing={4} sx={{ alignItems: "center" }}>
             <Typography
               component={motion.h5}
-              initial={{ y: -10 }}
+              initial={{ y: -30 }}
               animate={{ y: 0 }}
-              transition={{ type: "spring", duration:1.5}}
+              transition={{ type: "spring", duration:1.8}}
               variant="h5"
               sx={{ fontSize: { xs: "21px", sm:'34px', lg: "34px" } }}
             >

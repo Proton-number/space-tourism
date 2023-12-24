@@ -75,10 +75,6 @@ function Destination() {
           </Stack>
 
           <Stack
-            component={motion.div}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2 }}
             sx={{
               alignItems: { xs: "center", lg: "flex-start" },
               textAlign: { xs: "center", sm: "center", lg: "left" },

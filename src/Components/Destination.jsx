@@ -61,10 +61,6 @@ function Destination() {
         >
           <Stack spacing={4} sx={{ alignItems: "center" }}>
             <Typography
-              component={motion.h5}
-              initial={{ y: -30 }}
-              animate={{ y: 0 }}
-              transition={{ type: "spring", duration: 1.8 }}
               variant="h5"
               sx={{ fontSize: { xs: "21px", sm: "34px", lg: "34px" } }}
             >
@@ -80,8 +76,8 @@ function Destination() {
 
           <Stack
             component={motion.div}
-            initial={{ opacity: 0, y:-20 }}
-            animate={{ opacity: 1, y:0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2 }}
             sx={{
               alignItems: { xs: "center", lg: "flex-start" },

@@ -68,7 +68,10 @@ function Destination() {
               <span style={{ opacity: "50%" }}>01</span> PICK YOUR DESTINATION{" "}
             </Typography>
             <Box
-              component="img"
+              component={motion.img}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{duration:1.4}}
               src={images[currentIndex]}
               sx={{
                 width: { xs: "300px", sm: "340px", lg: "480px" },

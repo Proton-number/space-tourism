@@ -14,7 +14,12 @@ function Nav() {
         alignItems: "center",
       }}
     >
-      <Box component="img" id='desktop-logo' src={logo} sx={{ width: "50px", height: "50px" }} />
+      <Box
+        component="img"
+        id="desktop-logo"
+        src={logo}
+        sx={{ width: "50px", height: "50px" }}
+      />
 
       <Box
         sx={{ backgroundColor: "grey", width: { lg: "30%" }, height: "1px" }}
@@ -31,7 +36,11 @@ function Nav() {
         <Toolbar>
           <Stack direction="row" spacing={{ lg: 8 }}>
             <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
-              <Typography sx={{ cursor: "pointer" }}>
+              <Typography
+                component={motion.p}
+                whileHover={{ y: -4 }}
+                sx={{ cursor: "pointer" }}
+              >
                 {" "}
                 <b>00</b> Home{" "}
               </Typography>
@@ -41,7 +50,11 @@ function Nav() {
               to={"/Destination"}
               style={{ textDecoration: "none", color: "white" }}
             >
-              <Typography sx={{ cursor: "pointer" }}>
+              <Typography
+                component={motion.p}
+                whileHover={{ y: -4 }}
+                sx={{ cursor: "pointer" }}
+              >
                 {" "}
                 <b>01</b> Destination{" "}
               </Typography>
@@ -50,7 +63,11 @@ function Nav() {
               to={"/Crew"}
               style={{ textDecoration: "none", color: "white" }}
             >
-              <Typography sx={{ cursor: "pointer" }}>
+              <Typography
+                component={motion.p}
+                whileHover={{ y: -4 }}
+                sx={{ cursor: "pointer" }}
+              >
                 {" "}
                 <b>02</b> Crew{" "}
               </Typography>
@@ -59,7 +76,11 @@ function Nav() {
               to={"/Technology"}
               style={{ textDecoration: "none", color: "white" }}
             >
-              <Typography sx={{ cursor: "pointer" }}>
+              <Typography
+                component={motion.p}
+                whileHover={{ y: -4 }}
+                sx={{ cursor: "pointer" }}
+              >
                 {" "}
                 <b>03</b> Technology{" "}
               </Typography>

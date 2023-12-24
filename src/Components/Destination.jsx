@@ -64,18 +64,15 @@ function Destination() {
               component={motion.h5}
               initial={{ y: -30 }}
               animate={{ y: 0 }}
-              transition={{ type: "spring", duration:1.8}}
+              transition={{ type: "spring", duration: 1.8 }}
               variant="h5"
-              sx={{ fontSize: { xs: "21px", sm:'34px', lg: "34px" } }}
+              sx={{ fontSize: { xs: "21px", sm: "34px", lg: "34px" } }}
             >
               {" "}
               <span style={{ opacity: "50%" }}>01</span> PICK YOUR DESTINATION{" "}
             </Typography>
             <Box
-             component={motion.img}
-             initial={{ opacity: 0 }}
-             animate={{ opacity: 1 }}
-             transition={{ duration: 1}}
+              component="img"
               src={images[currentIndex]}
               sx={{ width: { xs: "300px", sm: "340px", lg: "480px" } }}
             />
@@ -83,9 +80,9 @@ function Destination() {
 
           <Stack
             component={motion.div}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1}}
+            initial={{ opacity: 0, y:-20 }}
+            animate={{ opacity: 1, y:0 }}
+            transition={{ duration: 1.2 }}
             sx={{
               alignItems: { xs: "center", lg: "flex-start" },
               textAlign: { xs: "center", sm: "center", lg: "left" },
@@ -94,24 +91,32 @@ function Destination() {
           >
             <Stack direction="row" spacing={{ xs: 4, sm: 6 }}>
               <Typography
+                component={motion.p}
+                whileHover={{ y: -4 }}
                 sx={{ cursor: "pointer" }}
                 onClick={() => setCurrentIndex(0)}
               >
                 MOON
               </Typography>
               <Typography
+                component={motion.p}
+                whileHover={{ y: -4 }}
                 sx={{ cursor: "pointer" }}
                 onClick={() => setCurrentIndex(1)}
               >
                 MARS
               </Typography>
               <Typography
+                component={motion.p}
+                whileHover={{ y: -4 }}
                 sx={{ cursor: "pointer" }}
                 onClick={() => setCurrentIndex(2)}
               >
                 EUROPA
               </Typography>
               <Typography
+                component={motion.p}
+                whileHover={{ y: -4 }}
                 sx={{ cursor: "pointer" }}
                 onClick={() => setCurrentIndex(3)}
               >

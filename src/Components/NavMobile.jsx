@@ -40,7 +40,7 @@ function NavMobile() {
             aria-label="menu"
             onClick={() => setisDrawerOpen(true)}
           >
-            <MenuIcon fontSize="large" />
+            <MenuIcon fontSize="large" sx={{color:'white'}} />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -66,7 +66,7 @@ function NavMobile() {
               aria-label="close-icon"
               onClick={() => setisDrawerOpen(false)}
             >
-              <CloseIcon fontSize="large" />
+              <CloseIcon fontSize="large" sx={{color:'white'}} />
             </IconButton>
           </Toolbar>
 
